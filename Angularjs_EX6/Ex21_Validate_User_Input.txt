@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+                      <!--myForm -->
+<form ng-app="" name="myForm">
+    Email:                  <!--saves info| text = info your inout tyope is name -->
+    <input type="email" name="myAddress" ng-model="text">
+    <span ng-show="myForm.myAddress.$error.email">Not a valid e-mail address</span>
+</form>    
+<!-- 
+error is checking if the information compliant
+your basic structure is 
+ng-show
+myForm = your form
+address = information
+error = check for errors
+email = error type
+ 
+-->
+
+<p>Enter your e-mail address in the input field. AngularJS will display an errormessage if the address is not an e-mail.</p>
+
+</body>
+</html>
+

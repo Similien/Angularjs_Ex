@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<!--
+the script is pulling the angular library 
+-->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<!--body is a directive ng-app is a directive -->
+<body ng-app="myApp">
+
+<w3-test-directive></w3-test-directive>
+
+<script>
+<!-- app is declared -->
+var app = angular.module("myApp", []);
+<!--app.directive will returns -->
+
+<!--"w3TestDirective", function returns a template-->
+app.directive("w3TestDirective", function() {
+    return {
+        template : "<h1>Made by a directive!</h1>"
+    };
+});
+</script>
+
+</body>
+</html>
